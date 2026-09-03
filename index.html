@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>BM VISHAL SKY • Craftland Items</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">🔥 BM VISHAL SKY</div>
+  <div class="sub">CRAFTLAND ITEMS • VERIFIED ITEM ID • ICON ID</div>
+</header>
+<main>
+  <div class="searchbar">
+    <input id="search" autocomplete="off" placeholder="Search item, Item ID, Icon ID...">
+    <button id="clearSearch" type="button">CLEAR</button>
+  </div>
+  <div id="status" class="status">Loading verified items...</div>
+  <div id="cats" class="cats">
+    <button class="active" data-cat="all">ALL</button>
+    <button data-cat="weapon">WEAPON SKINS</button>
+    <button data-cat="bundle">BUNDLES</button>
+    <button data-cat="emote">EMOTES</button>
+  </div>
+  <section id="grid" class="grid"></section>
+  <button id="loadMore" class="loadmore" type="button">LOAD MORE</button>
+</main>
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modalCard" role="dialog" aria-modal="true">
+    <button id="modalX" class="modalX" type="button" aria-label="Close">×</button>
+    <div class="modalPic"><img id="detailImg" alt=""><span id="detailFallback">🔥</span></div>
+    <div class="detail">
+      <h2 id="detailName">Item</h2>
+      <div id="detailType" class="detailType">ITEM</div>
+      <div class="verified">✓ IMAGE ID VERIFIED</div>
+      <div class="detailRow"><b>ID</b><span id="detailId">-</span></div>
+      <div class="detailRow"><b>ICON</b><span id="detailIcon">-</span></div>
+      <div class="detailActions">
+        <button id="copyItem" type="button">COPY ITEM ID</button>
+        <button id="copyIcon" type="button">COPY ICON ID</button>
+        <button id="copyBoth" class="both" type="button">COPY BOTH • CRAFTLAND</button>
+      </div>
+      <button id="modalClose" class="closeBtn" type="button">CLOSE</button>
+    </div>
+  </div>
+</div>
+<footer>Unofficial community item database. Only Weapon Skins, Emotes and Bundles are shown; crates, loot boxes, backpacks and vehicle skins are excluded.</footer>
+<script src="script.js"></script>
+</body>
+</html>
